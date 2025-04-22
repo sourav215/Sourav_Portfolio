@@ -4,7 +4,7 @@ import "./About.css";
 import Profilefic from "../../img/profilepic.png";
 
 function About() {
-  const { theme, mode} = useContext(themeContext);
+  const { theme, mode, toggle } = useContext(themeContext);
   const { darkmode, lightdarkmode, lightmode } = theme;
   React.useEffect(() => {
     startText();
