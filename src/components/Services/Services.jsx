@@ -22,7 +22,7 @@ function Services() {
         <div>
           <a
             href={
-              "https://drive.google.com/drive/folders/1t35w0Y0FbuhEPf0RLv0YoI94ldFtgZ_b?usp=sharing"
+              "https://drive.google.com/file/d/1wkFsKq8IQg2R1RVIibER5nOQjoq4ZzD1/view?usp=sharing"
             }
             target="_blank"
           >

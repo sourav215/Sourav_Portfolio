@@ -21,12 +21,13 @@ const Intro = () => {
           <span style={mode ? darkmode : lightmode}>Hey! I Am</span>
           <span style={mode ? { color: "wheat" } : lightmode}>Sourav Jana</span>
           <span style={mode ? { color: "lightgray" } : lightmode}>
-          Full-stack developer with hands-on experience in frontend and backend, building high-scalable and user-focused web applications
+            Full-stack developer with hands-on experience in frontend and
+            backend, building high-scalable and user-focused web applications
           </span>
         </div>
         <div className="i-buttons-div">
           <a
-            href="https://drive.google.com/drive/folders/1t35w0Y0FbuhEPf0RLv0YoI94ldFtgZ_b?usp=sharing"
+            href="https://drive.google.com/file/d/1wkFsKq8IQg2R1RVIibER5nOQjoq4ZzD1/view?usp=sharing"
             target="_blank"
           >
             <button className="i-button button">Resume</button>

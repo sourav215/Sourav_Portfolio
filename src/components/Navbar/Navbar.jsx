@@ -48,24 +48,19 @@ const Navbar = () => {
                   Projects
                 </Link>
               </li>
-              <a
-                href="https://drive.google.com/drive/folders/1t35w0Y0FbuhEPf0RLv0YoI94ldFtgZ_b?usp=sharing"
-                target="_blank"
-              >
-                <li>Resume</li>
-              </a>
+              <li>
+                <Link to="contact" spy={true} smooth={true}>
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
-          <button className="button n-button">
-            <Link
-              to="contact"
-              spy={true}
-              smooth={true}
-              style={{ fontSize: "16px" }}
-            >
-              Contact
-            </Link>
-          </button>
+          <a
+            href="https://drive.google.com/file/d/1wkFsKq8IQg2R1RVIibER5nOQjoq4ZzD1/view?usp=sharing"
+            target="_blank"
+          >
+            <button className="button n-button">Resume</button>
+          </a>
         </div>
         <button onClick={handleDropDownBtnClick} className="nav-dropDownBtn">
           {dropDownBtn ? <NavDropDownBtn2 /> : <NavDropDownBtn />}
