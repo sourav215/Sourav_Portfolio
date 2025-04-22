@@ -12,29 +12,27 @@ import GoToTop from "./components/GotoTop/GotoTop";
 import Projects from "./components/Projects/Projects";
 import { useContext } from "react";
 import { themeContext } from "./Context";
+import Experience from "./components/Experience/Experience";
 function App() {
-   const {theme,mode,toggle}  = useContext(themeContext);
-   const {darkmode,lightdarkmode,lightmode} = theme;
+  const { theme, mode } = useContext(themeContext);
+  const { darkmode, lightmode } = theme;
   // const darkMode = themedarkMode;
   return (
-    <div
-      className="App"
-      style={mode?darkmode:lightmode}
-    >
-      
+    <div className="App" style={mode ? darkmode : lightmode}>
       <Navbar />
       <Intro />
-      <Services />
-      <About/>
-      <Skills/>
-      <Projects/>
+      {/* <Services /> */}
+      <About />
+      <Experience />
+      <Skills />
+      <Projects />
       {/* <Experience /> */}
-      
+
       {/* <Works /> */}
       {/* <Portfolio /> */}
       {/* <Testimonial /> */}
       <Contact />
-      <GoToTop/>
+      <GoToTop />
       <Footer />
     </div>
   );

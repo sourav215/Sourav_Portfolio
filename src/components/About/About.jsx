@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { themeContext } from "../../Context";
 import "./About.css";
 import Profilefic from "../../img/profilepic.png";
+import Experience from "../Experience/Experience";
 
 function About() {
   const { theme, mode, toggle } = useContext(themeContext);
@@ -12,8 +13,8 @@ function About() {
   return (
     <div className="about" id="about">
       <div className="a-img">
-          <img src={Profilefic} alt="profile" className="profileImg" />
-        </div>
+        <img src={Profilefic} alt="profile" className="profileImg" />
+      </div>
       <div className="a-div">
         <div className="a-text">
           <h1 className="a-head" style={mode ? darkmode : lightmode}>
@@ -35,8 +36,9 @@ function About() {
             className="title-span"
             style={mode ? { color: "wheat" } : lightmode}
           >
-            I am a Full Stack Developer, passionate about building digital
-            products that improve the everyday experience for people.
+            I am a passionate Full Stack Developer with over 1 year and 10
+            months of hands-on experience specializing in the MERN stack and
+            Next.js.
           </span>
           <br />
           <br />
@@ -44,9 +46,13 @@ function About() {
             className="title-span"
             style={mode ? { color: "wheat" } : lightmode}
           >
-            I am a quick learner and an aspiring full-stack web developer with
-            core knowledge of MERN stack technology. Looking forward to applying
-            and enhancing my skills and knowledge as a developer.
+            I have a strong foundation in building scalable web applications and
+            AI-integrated educational platforms. My work has been instrumental
+            in developing and deploying new-age learning tools, enhancing user
+            experience, and solving real-world problems through technology. I
+            thrive in collaborative environments, enjoy building things from
+            scratch, and love experimenting with AI-driven interactive solutions
+            to create impact-driven products.
           </span>
         </div>
         {/* <div className="a-img">
@@ -64,6 +70,7 @@ function About() {
           <span class="wrap"></span>
         </a>
       </h1>
+      {/* <Experience /> */}
     </div>
   );
 }
